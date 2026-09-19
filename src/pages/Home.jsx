@@ -19,7 +19,7 @@ const Home = () => {
               So, you watch the best movie.
             </p>
             
-            <NavLink className="btn btn-primary">Movie Explorer</NavLink>
+            <NavLink to="/movie" className="btn btn-primary">Movie Explorer</NavLink>
           </div>
         </div>
       </div>

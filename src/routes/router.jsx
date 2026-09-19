@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import HomeLayout from "../layouts/HomeLayout";
 import Home from "../pages/Home";
+import MovieList from "../pages/MovieList";
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,9 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/auth",
-    element: <h2>Authentication Layout</h2>,
+    path: "/movie",
+    element: <MovieList></MovieList>,
+    loader: () => fetch("/movieList.json"),
   },
 
   {
